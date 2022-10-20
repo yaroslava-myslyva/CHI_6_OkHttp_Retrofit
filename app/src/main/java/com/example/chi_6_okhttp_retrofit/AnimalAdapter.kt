@@ -28,7 +28,7 @@ class AnimalAdapter() : RecyclerView.Adapter<AnimalAdapter.AnimalViewHolder>() {
                     .into(animalPhoto)
 
                 val description =
-                    "This animal is a representative of the ${animal.animal_type} class. " +
+                    "This animal is a representative of the ${animal.animal_type} class.  " +
                             "The peak of activity of this creature came in the ${animal.active_time}" +
                             " The dimensions of one person are from ${animal.length_min} to ${animal.length_max} meters, " +
                             "and the weight is from ${animal.weight_min} to ${animal.weight_max} kilograms." +
@@ -36,8 +36,8 @@ class AnimalAdapter() : RecyclerView.Adapter<AnimalAdapter.AnimalViewHolder>() {
                             "These places are rich in ${animal.diet}, which is the animal's main diet." +
                             " Average life expectancy - ${animal.lifespan} years "
 
-                val desciptionView = findViewById<TextView>(R.id.description)
-                desciptionView.text = description
+                val descriptionView = findViewById<TextView>(R.id.description)
+                descriptionView.text = description
             }
         }
     }

@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 
-class AnimalAdapter(private val items: List<Animal>) : RecyclerView.Adapter<AnimalAdapter.AnimalViewHolder>() {
-
+class AnimalAdapter() : RecyclerView.Adapter<AnimalAdapter.AnimalViewHolder>() {
+    private var items: List<Animal> = mutableListOf()
 
     inner class AnimalViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         fun bind(animal: Animal) {
@@ -42,9 +42,9 @@ class AnimalAdapter(private val items: List<Animal>) : RecyclerView.Adapter<Anim
         }
     }
 
-//    fun setItems(list :List<Animal>){
-//        this.items = list
-//    }
+    fun setItems(list :List<Animal>){
+        this.items = list
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AnimalViewHolder {
         val view = LayoutInflater.from(parent.context)

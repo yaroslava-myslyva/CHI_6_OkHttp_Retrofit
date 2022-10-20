@@ -25,7 +25,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import java.lang.reflect.Type
 import kotlin.concurrent.thread
-
+//
 
 class ListFragment : Fragment() {
     private lateinit var binding: FragmentListBinding
